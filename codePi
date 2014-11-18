@@ -1,0 +1,33 @@
+/*
+ * To change this template, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package dao.interfacce;
+
+import entite.Chef;
+import java.util.List;
+
+/**
+ *
+ * @author dell
+ */
+public interface IChefDAO {
+
+    public  IChefDAO getInstance();
+
+
+    
+    void insertChef(Chef chef);
+
+    void updateChef(Chef c);
+
+    void deleteChef(String cin);
+
+    Chef findChefById(int id);
+    Chef findChefByCin(String cin);
+
+    Chef findCheftByNom(String nom);
+
+    List<Chef> DisplayAllChefs();
+    
+}
